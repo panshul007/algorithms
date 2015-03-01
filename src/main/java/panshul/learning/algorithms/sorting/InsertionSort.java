@@ -4,7 +4,7 @@ public class InsertionSort
 {
     public static void main(String[] args)
     {
-        int[] target = {5, 2, 8, 12, 7};
+        int[] target = {5, 2, 8, 12, 7, -9};
         int[] sorted = sort(target);
         for (int i : sorted)
         {
