@@ -27,12 +27,10 @@ public class Anagrams
 
     private static boolean isAnagram(String string1, String string2)
     {
-        string1 = string1.replace(" ", "");
-        string2 = string2.replace(" ", "");
-        char[] chars1 = string1.toLowerCase().toCharArray();
-        char[] chars2 = string2.toLowerCase().toCharArray();
-        chars1 = sort(chars1);
-        chars2 = sort(chars2);
+        char[] chars1 = string1.replace(" ", "").toLowerCase().toCharArray();
+        char[] chars2 = string2.replace(" ", "").toLowerCase().toCharArray();
+        sort(chars1);
+        sort(chars2);
         System.out.println(chars1);
         System.out.println(chars2);
         return Arrays.equals(chars1, chars2);
