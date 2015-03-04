@@ -7,7 +7,6 @@ public class PassByValue
         Dog myDog = new Dog("Rover");
         foo(myDog);
         System.out.println("Name of myDog: " + myDog.getName());
-
     }
 
     /**
