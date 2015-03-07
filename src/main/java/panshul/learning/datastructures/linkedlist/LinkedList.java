@@ -1,18 +1,33 @@
 package panshul.learning.datastructures.linkedlist;
 
-public class LinkedList
+public class LinkedList<T>
 {
-    private Node head;
+    private Node<T> head;
 
-    public void insertAtHead(int data)
+    public void insertAtHead(T data)
     {
-        Node newNode = new Node(data, this.head);
+        Node<T> newNode = new Node<T>(data, this.head);
         this.head = newNode;
     }
 
     public void deleteFromHead()
     {
         this.head = this.head.getNextNode();
+    }
+
+    public Node find(T data)
+    {
+        Node current = this.head;
+
+        while (current != null)
+        {
+            if (current.getData() == data)
+            {
+                return current;
+            }
+            current = current.getNextNode();
+        }
+        return null;
     }
 
     public int length()

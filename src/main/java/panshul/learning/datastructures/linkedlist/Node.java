@@ -1,32 +1,32 @@
 package panshul.learning.datastructures.linkedlist;
 
-public class Node
+public class Node<T>
 {
-    private int  data;
-    private Node nextNode;
+    private T       data;
+    private Node<T> nextNode;
 
-    public Node(int data, Node nextNode)
+    public Node(T data, Node<T> nextNode)
     {
         this.data = data;
         this.nextNode = nextNode;
     }
 
-    public int getData()
+    public T getData()
     {
         return data;
     }
 
-    public void setData(int data)
+    public void setData(T data)
     {
         this.data = data;
     }
 
-    public Node getNextNode()
+    public Node<T> getNextNode()
     {
         return nextNode;
     }
 
-    public void setNextNode(Node nextNode)
+    public void setNextNode(Node<T> nextNode)
     {
         this.nextNode = nextNode;
     }
