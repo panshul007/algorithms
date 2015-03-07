@@ -30,6 +30,21 @@ public class LinkedList<T>
         return null;
     }
 
+    public void sort()
+    {
+        //to sort the linked list. using the equals method, since the data type of Node is generic
+    }
+
+    /**
+     * insert an element in the linked list, will work only if the linked list is sorted. This method is also supposed to keep the structure sorted.
+     * supposed to compare the given node data with the next node data of current node.
+     * when found the correct location, then make the next node of new node = next node of current node and make the next node of current node = new node.
+     */
+    public void insert()
+    {
+
+    }
+
     public int length()
     {
         int length = 0;
