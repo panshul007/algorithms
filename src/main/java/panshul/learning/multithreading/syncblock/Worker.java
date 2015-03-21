@@ -22,8 +22,8 @@ public class Worker
     private List<Integer> list1 = new ArrayList<Integer>();
     private List<Integer> list2 = new ArrayList<Integer>();
 
-    Object lock1 = new Object();
-    Object lock2 = new Object();
+    private final Object lock1 = new Object();
+    private final Object lock2 = new Object();
 
     //public synchronized void stageOne()
     public void stageOne()
