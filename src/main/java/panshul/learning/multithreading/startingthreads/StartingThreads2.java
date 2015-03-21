@@ -1,4 +1,4 @@
-package panshul.learning.multithreading;
+package panshul.learning.multithreading.startingthreads;
 
 public class StartingThreads2
 {
